@@ -11,7 +11,6 @@
 		2A8EF9752B5AB37200595907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EF9742B5AB37200595907 /* Assets.xcassets */; };
 		2A8EF9782B5AB37200595907 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EF9772B5AB37200595907 /* Preview Assets.xcassets */; };
 		2A8EF9882B5AB9AF00595907 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8EF9872B5AB9AF00595907 /* DetailView.swift */; };
-		2A8EF98B2B5AB9F300595907 /* PokemonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8EF98A2B5AB9F300595907 /* PokemonCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +19,6 @@
 		2A8EF9742B5AB37200595907 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A8EF9772B5AB37200595907 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A8EF9872B5AB9AF00595907 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		2A8EF98A2B5AB9F300595907 /* PokemonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +79,6 @@
 		2A8EF9892B5AB9DA00595907 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2A8EF98A2B5AB9F300595907 /* PokemonCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,7 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A8EF9712B5AB37000595907 /* TradingCardsApp.swift in Sources */,
-				2A8EF98B2B5AB9F300595907 /* PokemonCard.swift in Sources */,
 				2A8EF9882B5AB9AF00595907 /* DetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
