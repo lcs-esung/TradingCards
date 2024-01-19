@@ -39,15 +39,20 @@ struct DetailView: View {
                  .offset(y: -170)
                  .padding(19)
             
-            
             Image("JettImage")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .padding()
                 .padding(29)
                 .offset(y: -170)
+
+            Image("DuelistImage")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding()
+                .padding(126)
+                .offset(x: 105, y: -40)
             
-            Image()
         }
     }
 }
