@@ -56,35 +56,45 @@ struct DetailView: View {
                     .offset(x: 105, y: -40)
                 
             }
-            .padding(.top, 80)
+            .padding(.top, 30)
             
             VStack(alignment: .leading) {
                 
                 Text("Skills")
                     .bold()
                     .padding(.bottom)
+                    .padding(.trailing, 280)
                 
-                HStack(spacing: 20) {
+                HStack(spacing: 14) {
                     
                     VStack(alignment: .leading) {
                         Text(" 1st skill")
+                            .bold()
                         Text(" Updraft")
-                        
                     }
                     
                     VStack(alignment: .leading) {
                         Text(" 2nd skill")
+                            .bold()
                         Text(" Tailwind")
-                        
                     }
                     
                     VStack(alignment: .leading) {
                         Text(" 3rd skill")
+                            .bold()
                         Text(" Cloudburst")
-                        
                     }
+                    
+                    VStack(alignment: .leading) {
+                        Text(" Ultimate")
+                            .bold()
+                        Text(" Blade Storm")
+                    }
+                    
+                   
                 }
             }
+            .padding(.all, -150)
         }
         
       
