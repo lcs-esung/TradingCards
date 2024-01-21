@@ -11,6 +11,7 @@ struct DetailView: View {
    
     var body: some View {
         
+        
         VStack {
             ZStack {
                 
@@ -104,6 +105,7 @@ struct DetailView: View {
             .padding(.all)
       
     }
+        
 }
 
 #Preview {
