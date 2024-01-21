@@ -98,10 +98,10 @@ struct DetailView: View {
         }
             Text("Biography")
             .bold()
-            .padding(.bottom)
             .padding(.leading, -180)
         
-        Text("Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.")
+        Text( "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.")
+            .padding(.all)
       
     }
 }
