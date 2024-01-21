@@ -56,14 +56,14 @@ struct DetailView: View {
                     .offset(x: 105, y: -40)
                 
             }
-            .padding(.top, 30)
+            .padding(.top, 150)
             
             VStack(alignment: .leading) {
                 
                 Text("Skills")
                     .bold()
                     .padding(.bottom)
-                    .padding(.trailing, 280)
+                    .padding(.leading, 0)
                 
                 HStack(spacing: 14) {
                     
@@ -96,7 +96,12 @@ struct DetailView: View {
             }
             .padding(.all, -150)
         }
+            Text("Biography")
+            .bold()
+            .padding(.bottom)
+            .padding(.leading, -180)
         
+        Text("Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.")
       
     }
 }
