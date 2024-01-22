@@ -38,6 +38,7 @@ struct DetailView: View {
                             .offset(y: -140)
                             .padding(19)
                         
+                       
                         Image("JettImage")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
@@ -45,63 +46,67 @@ struct DetailView: View {
                             .padding(29)
                             .offset(y: -140)
                         
+                    
+                        
                         Image("DuelistImage")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding()
-                            .padding(125)
-                            .offset(x: 125, y: -18)
+                            .padding(134)
+                            .offset(x: 125, y: -350)
                         
                     }
                     .padding(.top, 150)
                     
-                    VStack(alignment: .leading) {
-                        
-                        Text("Skills")
-                            .font(Font.custom("Charter-Black", size: 20))
-                            .bold()
-                            .padding(.bottom)
-                            .padding(.leading, 5)
-                            .padding(.top, 17)
-                        
-                        HStack(spacing: 14) {
+                    ZStack {
+                        VStack(alignment: .leading) {
                             
-                            VStack(alignment: .leading) {
-                                Text(" 1st skill")
-                                    .font(Font.custom("Charter-Bold", size: 17))
-                                    .bold()
-                                Text(" Updraft")
-                                    .font(Font.custom("Charter-italic", size: 17))
+                            Text("Skills")
+                                .font(Font.custom("Charter-Black", size: 20))
+                                .bold()
+                                .padding(.bottom)
+                                .padding(.leading, 5)
+                                .padding(.top, 17)
+                            
+                            HStack(spacing: 14) {
+                                
+                                VStack(alignment: .leading) {
+                                    Text(" 1st skill")
+                                        .font(Font.custom("Charter-Bold", size: 17))
+                                        .bold()
+                                    Text(" Updraft")
+                                        .font(Font.custom("Charter-italic", size: 17))
+                                }
+                                
+                                VStack(alignment: .leading) {
+                                    Text(" 2nd skill")
+                                        .font(Font.custom("Charter-Bold", size: 17))
+                                        .bold()
+                                    Text(" Tailwind")
+                                        .font(Font.custom("Charter-italic", size: 17))
+                                }
+                                
+                                VStack(alignment: .leading) {
+                                    Text(" 3rd skill")
+                                        .font(Font.custom("Charter-Bold", size: 17))
+                                        .bold()
+                                    Text(" Cloudburst")
+                                        .font(Font.custom("Charter-italic", size: 17))
+                                }
+                                
+                                VStack(alignment: .leading) {
+                                    Text(" Ultimate")
+                                        .font(Font.custom("Charter-Bold", size: 17))
+                                        .bold()
+                                    Text(" Blade Storm")
+                                        .font(Font.custom("Charter-italic", size: 17))
+                                }
+                                
+                                
                             }
-                            
-                            VStack(alignment: .leading) {
-                                Text(" 2nd skill")
-                                    .font(Font.custom("Charter-Bold", size: 17))
-                                    .bold()
-                                Text(" Tailwind")
-                                    .font(Font.custom("Charter-italic", size: 17))
-                            }
-                            
-                            VStack(alignment: .leading) {
-                                Text(" 3rd skill")
-                                    .font(Font.custom("Charter-Bold", size: 17))
-                                    .bold()
-                                Text(" Cloudburst")
-                                    .font(Font.custom("Charter-italic", size: 17))
-                            }
-                            
-                            VStack(alignment: .leading) {
-                                Text(" Ultimate")
-                                    .font(Font.custom("Charter-Bold", size: 17))
-                                    .bold()
-                                Text(" Blade Storm")
-                                    .font(Font.custom("Charter-italic", size: 17))
-                            }
-                            
-                            
                         }
+                        .padding(.all, -150)
                     }
-                    .padding(.all, -150)
                     
                     Text("Biography")
                         .font(Font.custom("Charter-Black", size: 20))
@@ -114,6 +119,18 @@ struct DetailView: View {
                         .padding(.all)
                         .padding(.top, -20)
  
+                    Image("Banner")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
+                        .offset(y: -140)
+                    
+                    Image("JettCrown")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
+                        .padding(29)
+                    
                 }
             }
             .navigationTitle("Jett")
