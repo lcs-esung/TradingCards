@@ -19,137 +19,179 @@ struct DetailView: View {
                         
                         Rectangle()
                             .foregroundColor(.black)
-                            .offset(y: -140)
                         
                         Rectangle()
                             .foregroundColor(.white)
                             .padding()
-                            .offset(y: -140)
-                            .padding(-3)
+                        
                         
                         Rectangle()
                             .foregroundColor(.cyan)
                             .padding()
-                            .offset(y: -140)
-                            .padding(8)
+                            .padding()
                         
                         Rectangle()
                             .foregroundColor(.white)
                             .padding()
-                            .offset(y: -140)
-                            .padding(19)
-                        
-                       
+                            .padding()
+                            .padding()
                         
                         Image("JettImage")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding()
-                            .padding(29)
-                            .offset(y: -140)
-                        
-                      
-                        
-                        
-                        Image("DuelistImage")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
                             .padding()
-                            .padding(134)
-                            .offset(x: 125, y: -350)
+                            .padding()
+                            .padding()
+                            
+                        
+
+                        
+                        VStack {
+                            HStack {
+                                
+                                Spacer()
+                                
+                                    .padding()
+                                
+                                 
+                                Image("DuelistImage")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                
+                            
+                            }
+                            
+                            Spacer()
+                        }
                         
                         
                     }
-                    .padding(.top, 150)
+                    .padding(.top)
                     
                     
                     ZStack {
                         
                         Image("Banner")
                             .resizable()
-                            .offset(y: -450)
-                        
-                        Rectangle()
-                            .foregroundColor(.white)
-                            .aspectRatio(contentMode: .fit)
-                            .padding()
-                            .offset(y: -400)
-                         
-                        
-                        
-                        VStack(alignment: .leading) {
-                            
-                            Text("Skills")
-                                .font(Font.custom("Charter-Black", size: 20))
-                                .bold()
-                                .padding(.bottom)
-                                .padding(.leading, 25)
-                                .padding(.top, -535)
-                            
-                            
-                            HStack(spacing: 12) {
-                                
-                                VStack(alignment: .leading) {
-                                    Text(" 1st skill")
-                                        .font(Font.custom("Charter-Bold", size: 17))
-                                        .bold()
-                                    Text(" Updraft")
-                                        .font(Font.custom("Charter-italic", size: 17))
-                                }
-                                
-                                VStack(alignment: .leading) {
-                                    Text(" 2nd skill")
-                                        .font(Font.custom("Charter-Bold", size: 17))
-                                        .bold()
-                                    Text(" Tailwind")
-                                        .font(Font.custom("Charter-italic", size: 17))
-                                }
-                                
-                                VStack(alignment: .leading) {
-                                    Text(" 3rd skill")
-                                        .font(Font.custom("Charter-Bold", size: 17))
-                                        .bold()
-                                    Text(" Cloudburst")
-                                        .font(Font.custom("Charter-italic", size: 17))
-                                }
-                                
-                                VStack(alignment: .leading) {
-                                    Text(" Ultimate")
-                                        .font(Font.custom("Charter-Bold", size: 17))
-                                        .bold()
-                                    Text(" Blade Storm")
-                                        .font(Font.custom("Charter-italic", size: 17))
-                                }
-                
-                            }
                            
-                            .padding(.top, -495)
-                            .padding(.leading, 20)
+                                
+                                VStack {
+                                    Rectangle()
+                                        .foregroundColor(.white)
+                                        .aspectRatio(contentMode: .fit)
+                                        .padding()
+                                    
+                                    Spacer()
+                                }
+                                    .overlay(
+                                        
+                                        
+                                        VStack(alignment: .leading) {
+                                            
+                                            Spacer()
+                                            Spacer()
+                                            
+                                            
+                                            HStack {
+                                                
+                                                Spacer(minLength: 30)
+                                                
+                                                Text("Skills")
+                                                    .font(Font.custom("Charter-Black", size: 20))
+                                                    .bold()
+                                                    .padding(.bottom)
+                                                    .padding(.top)
+                                                
+                                                Spacer()
+                                                    .padding()
+                                            }
+                                            
+                                            
+                                            HStack(spacing: 12) {
+                                                
+                                                VStack(alignment: .leading) {
+                                                    Text(" 1st skill")
+                                                        .font(Font.custom("Charter-Bold", size: 17))
+                                                        .bold()
+                                                    Text(" Updraft")
+                                                        .font(Font.custom("Charter-italic", size: 17))
+                                                }
+                                                
+                                                VStack(alignment: .leading) {
+                                                    Text(" 2nd skill")
+                                                        .font(Font.custom("Charter-Bold", size: 17))
+                                                        .bold()
+                                                    Text(" Tailwind")
+                                                        .font(Font.custom("Charter-italic", size: 17))
+                                                }
+                                                
+                                                VStack(alignment: .leading) {
+                                                    Text(" 3rd skill")
+                                                        .font(Font.custom("Charter-Bold", size: 17))
+                                                        .bold()
+                                                    Text(" Cloudburst")
+                                                        .font(Font.custom("Charter-italic", size: 17))
+                                                }
+                                                
+                                                VStack(alignment: .leading) {
+                                                    Text(" Ultimate")
+                                                        .font(Font.custom("Charter-Bold", size: 17))
+                                                        .bold()
+                                                    Text(" Blade Storm")
+                                                        .font(Font.custom("Charter-italic", size: 17))
+                                                }
+                                                
+                                            }
+                                            
+                                            
+                                            .padding(.leading, 20)
+                                            
+                                            VStack {
+                                                HStack {
+                                                    
+                                                    
+                                                    Text("Biography")
+                                                        .font(Font.custom("Charter-Black", size: 20))
+                                                        .bold()
+                                                        .padding(.leading, 25)
+                                                        .padding(.top)
+                                                        .padding(.bottom)
+                                                    
+                                                    Spacer()
+                                                }
+                                            }
+                                            
+                                            
+                                            
+                                            Text( "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.")
+                                                .font(Font.custom("Charter-italic", size: 17))
+                                                .padding(.leading, 20)
+                                            
+                                            
+                                            Spacer()
+                                            Spacer()
+                                                .padding()
+                                        }
+                                    )
                             
-                            Text("Biography")
-                                .font(Font.custom("Charter-Black", size: 20))
-                                .bold()
-                                .padding(.leading, 25)
-                                .padding(.top, -420)
-                      
+                        
+                        
+                        
+                        
+                        VStack {
+                            Spacer()
                             
-                            Text( "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.")
-                                .font(Font.custom("Charter-italic", size: 17))
-                                .padding(.leading, 20)
-                                .padding(.top, -400)
+                            Image("JettCrown")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .padding()
+                                .padding()
                             
-                          
+                            Spacer()
                         }
-            
                     }
-                    
-            
-                    Image("JettCrown")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .padding()
-                        .padding(90)
-                        .offset(y: -840)
+                     
                     
                 }
                 .background(.black)
