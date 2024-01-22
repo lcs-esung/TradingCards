@@ -67,9 +67,15 @@ struct DetailView: View {
                         
                         Image("Banner")
                             .resizable()
+                            .offset(y: -450)
+                        
+                        Rectangle()
+                            .foregroundColor(.white)
                             .aspectRatio(contentMode: .fit)
-                            .padding(60)
-                            .offset(y: -120)
+                            .padding()
+                            .offset(y: -400)
+                         
+                        
                         
                         VStack(alignment: .leading) {
                             
@@ -77,11 +83,11 @@ struct DetailView: View {
                                 .font(Font.custom("Charter-Black", size: 20))
                                 .bold()
                                 .padding(.bottom)
-                                .padding(.leading, 15)
-                                .padding(.top, -115)
+                                .padding(.leading, 25)
+                                .padding(.top, -535)
                             
                             
-                            HStack(spacing: 14) {
+                            HStack(spacing: 12) {
                                 
                                 VStack(alignment: .leading) {
                                     Text(" 1st skill")
@@ -116,37 +122,34 @@ struct DetailView: View {
                                 }
                 
                             }
-                            .padding(.top, -85)
-                            .padding(.leading, 10)
+                           
+                            .padding(.top, -495)
+                            .padding(.leading, 20)
                             
                             Text("Biography")
                                 .font(Font.custom("Charter-Black", size: 20))
                                 .bold()
-                                .padding(.leading)
-                                .padding(.top, -30)
+                                .padding(.leading, 25)
+                                .padding(.top, -420)
+                      
                             
                             Text( "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.")
                                 .font(Font.custom("Charter-italic", size: 17))
-                                .padding(.all)
-                                .padding(.top, -20)
+                                .padding(.leading, 20)
+                                .padding(.top, -400)
+                            
+                          
                         }
-                        .background(.white)
-                        
-                       
-                        
-                 
+            
                     }
                     
-                   
- 
-                   
-                    
-                    
+            
                     Image("JettCrown")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .padding()
-                        .padding(29)
+                        .padding(90)
+                        .offset(y: -840)
                     
                 }
                 .background(.black)
