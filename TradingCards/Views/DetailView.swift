@@ -16,6 +16,7 @@ struct DetailView: View {
                 VStack {
                     ZStack {
                         
+                        
                         Rectangle()
                             .foregroundColor(.black)
                             .offset(y: -140)
@@ -39,6 +40,7 @@ struct DetailView: View {
                             .padding(19)
                         
                        
+                        
                         Image("JettImage")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
@@ -46,7 +48,8 @@ struct DetailView: View {
                             .padding(29)
                             .offset(y: -140)
                         
-                    
+                      
+                        
                         
                         Image("DuelistImage")
                             .resizable()
@@ -55,18 +58,28 @@ struct DetailView: View {
                             .padding(134)
                             .offset(x: 125, y: -350)
                         
+                        
                     }
                     .padding(.top, 150)
                     
+                    
                     ZStack {
+                        
+                        Image("Banner")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .padding(60)
+                            .offset(y: -120)
+                        
                         VStack(alignment: .leading) {
                             
                             Text("Skills")
                                 .font(Font.custom("Charter-Black", size: 20))
                                 .bold()
                                 .padding(.bottom)
-                                .padding(.leading, 5)
-                                .padding(.top, 17)
+                                .padding(.leading, 15)
+                                .padding(.top, -115)
+                            
                             
                             HStack(spacing: 14) {
                                 
@@ -101,29 +114,33 @@ struct DetailView: View {
                                     Text(" Blade Storm")
                                         .font(Font.custom("Charter-italic", size: 17))
                                 }
-                                
-                                
+                
                             }
+                            .padding(.top, -85)
+                            .padding(.leading, 10)
+                            
+                            Text("Biography")
+                                .font(Font.custom("Charter-Black", size: 20))
+                                .bold()
+                                .padding(.leading)
+                                .padding(.top, -30)
+                            
+                            Text( "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.")
+                                .font(Font.custom("Charter-italic", size: 17))
+                                .padding(.all)
+                                .padding(.top, -20)
                         }
-                        .padding(.all, -150)
+                        .background(.white)
+                        
+                       
+                        
+                 
                     }
                     
-                    Text("Biography")
-                        .font(Font.custom("Charter-Black", size: 20))
-                        .bold()
-                        .padding(.leading, -174)
-                        .padding(.top, -30)
-                    
-                    Text( "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.")
-                        .font(Font.custom("Charter-italic", size: 17))
-                        .padding(.all)
-                        .padding(.top, -20)
+                   
  
-                    Image("Banner")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .padding()
-                        .offset(y: -140)
+                   
+                    
                     
                     Image("JettCrown")
                         .resizable()
@@ -132,6 +149,7 @@ struct DetailView: View {
                         .padding(29)
                     
                 }
+                .background(.black)
             }
             .navigationTitle("Jett")
            
