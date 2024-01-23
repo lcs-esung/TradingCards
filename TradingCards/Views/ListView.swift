@@ -13,20 +13,23 @@ struct ListView: View {
         NavigationStack{
             List{
                 
-                NavigationLink(destination: {
-                   jettCard
-                }, label: {
-                    
-                    ListPlayerView()
-                    
-                })
+                NavigationLink(destination: {jettCard}, 
+                               label: {ListPlayerView()})
+                
+                NavigationLink(destination:{pheonixCard},                               label:{ListPlayerView()})
+                
+                NavigationLink(destination:{yoruCard},                               label:{ListPlayerView()})
+                
+                NavigationLink(destination:{reynaCard},                               label:{ListPlayerView()})
+                
+                NavigationLink(destination:{razeCard},                               label:{ListPlayerView()})
+
                                
             
+            }
         }
-        
     }
 }
-                               }
 #Preview {
     ListView()
 }

@@ -7,14 +7,17 @@
 
 import SwiftUI
 
+
 struct ListPlayerView: View {
     var body: some View {
         
         HStack{
             Image("JettImage")
                 .resizable()
+                .clipShape(Circle()).padding()
                 .scaledToFit()
-                .padding(.trailing)
+                .padding(.trailing, 3)
+                .frame(width: 100)
             
             VStack(alignment: .leading){
                 Text("Jett")
@@ -24,9 +27,7 @@ struct ListPlayerView: View {
                 Text("Representing her home country of South Korea.")
             }
             
-            
-            
-            
+            .padding()
         }
     }
 }

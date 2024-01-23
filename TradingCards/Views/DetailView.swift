@@ -196,6 +196,7 @@ struct DetailView: View {
                                             Text(biography)
                                                 .font(Font.custom("Charter-italic", size: 17))
                                                 .padding(.leading, 20)
+                                                .padding()
                                             
                                          
                                         }
