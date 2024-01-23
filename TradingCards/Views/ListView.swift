@@ -14,18 +14,19 @@ struct ListView: View {
             List{
                 
                 NavigationLink(destination: {
-                    
-                   jettCard)
+                   jettCard
                 }, label: {
                     
-                }
+                    ListPlayerView()
+                    
+                })
                                
             
         }
         
     }
 }
-
+                               }
 #Preview {
     ListView()
 }
