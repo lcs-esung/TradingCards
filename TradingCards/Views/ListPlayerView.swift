@@ -8,30 +8,44 @@
 import SwiftUI
 
 
+
 struct ListPlayerView: View {
+    
+    let iconImage: String
+    let name: String
+    let descriptions : String
+    
     var body: some View {
         
         HStack{
-            Image("JettImage")
+            
+            Circle()
+                .frame(width: 50)
+                .overlay(
+                    
+            Image(iconImage)
                 .resizable()
-                .clipShape(Circle()).padding()
-                .scaledToFit()
+               
                 .padding(.trailing, 3)
-                .frame(width: 100)
+                
+                )
+                .mask(Circle())
             
             VStack(alignment: .leading){
-                Text("Jett")
+                Text(name)
                     .bold()
                     .font(.headline)
+                
+                   
            
-                Text("Representing her home country of South Korea.")
+                Text(descriptions)
+                    .font(Font.custom("Charter", size: 12))
             }
-            
-            .padding()
         }
+        .padding(.horizontal)
     }
 }
 
 #Preview {
-    ListPlayerView()
+    ListPlayerView(iconImage: "JettImage", name: "Jett", descriptions: "Representing her home country of South Korea.")
 }

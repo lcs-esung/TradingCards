@@ -12,7 +12,6 @@ struct ListView: View {
 
         NavigationStack{
             List{
-                
                 NavigationLink(destination: {jettCard}, 
                                label: {ListPlayerView()})
                 
@@ -24,9 +23,8 @@ struct ListView: View {
                 
                 NavigationLink(destination:{razeCard},                               label:{ListPlayerView()})
 
-                               
-            
             }
+          
         }
     }
 }

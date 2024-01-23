@@ -26,3 +26,5 @@ let yoruCard = DetailView(playerImage: "YoruImage", frameColor: .blue, crownImag
 let razeCard = DetailView(playerImage: "RazeImage", frameColor: .orange, crownImage: "RazeCrown", agentRoleImage: "DuelistImage", playerName: "Raze", firstUtility: "BlastPack", secondUtility: "PaintShells", thirdUtility: "BoomBot", ultimate: "ShowStopper", biography: "Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of boom.")
 
 let reynaCard = DetailView(playerImage: "ReynaImage", frameColor: .purple, crownImage: "ReynaCrown", agentRoleImage: "DuelistImage", playerName: "Reyna", firstUtility: "Devour", secondUtility: "Dismiss", thirdUtility: "Leer", ultimate: "Empress", biography: "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.")
+
+let jettList = list

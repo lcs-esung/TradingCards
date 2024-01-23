@@ -98,6 +98,15 @@ struct DetailView: View {
                                 Image(crownImage)
                                     .resizable()
                                 .scaledToFit()
+                                .frame(width: 150)
+                                
+                                Spacer()
+                                Spacer()
+                                Spacer()
+                                Spacer()
+                                Spacer()
+                                Spacer()
+                                 
                             }
                             
                             VStack {
