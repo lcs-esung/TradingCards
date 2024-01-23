@@ -9,6 +9,17 @@ import SwiftUI
 
 struct DetailView: View {
     
+    let playerImage: String
+    let frameColor: Color
+    let crownImage: String
+    let agentRoleImage: String
+    let playerName: String
+    let firstUtility: String
+    let secondUtility: String
+    let thirdUtility: String
+    let ultimate: String
+    let biography: String
+    
     var body: some View {
         
         NavigationStack{
@@ -28,7 +39,7 @@ struct DetailView: View {
                         
                         
                         Rectangle()
-                            .foregroundColor(.cyan)
+                            .foregroundStyle(frameColor)
                             .cornerRadius(4)
                             .padding()
                             .padding()
@@ -40,7 +51,7 @@ struct DetailView: View {
                             .padding()
                             .padding()
                         
-                        Image("JettImage")
+                        Image(playerImage)
                             .resizable()
                             .cornerRadius(4)
                             .aspectRatio(contentMode: .fit)
@@ -58,7 +69,7 @@ struct DetailView: View {
                                     .padding()
                                 
                                  
-                                Image("DuelistImage")
+                                Image(agentRoleImage)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                 
@@ -84,7 +95,7 @@ struct DetailView: View {
                                 Spacer()
                                     .padding()
                                     
-                                Image("JettCrown")
+                                Image(crownImage)
                                     .resizable()
                                 .scaledToFit()
                             }
@@ -136,7 +147,7 @@ struct DetailView: View {
                                                         Text(" 1st skill")
                                                             .font(Font.custom("Charter-Bold", size: 17))
                                                             .bold()
-                                                        Text(" Updraft")
+                                                        Text(firstUtility)
                                                             .font(Font.custom("Charter-italic", size: 17))
                                                     }
                                                     
@@ -144,7 +155,7 @@ struct DetailView: View {
                                                         Text(" 2nd skill")
                                                             .font(Font.custom("Charter-Bold", size: 17))
                                                             .bold()
-                                                        Text(" Tailwind")
+                                                        Text(secondUtility)
                                                             .font(Font.custom("Charter-italic", size: 17))
                                                     }
                                                     
@@ -152,7 +163,7 @@ struct DetailView: View {
                                                         Text(" 3rd skill")
                                                             .font(Font.custom("Charter-Bold", size: 17))
                                                             .bold()
-                                                        Text(" Cloudburst")
+                                                        Text(thirdUtility)
                                                             .font(Font.custom("Charter-italic", size: 17))
                                                     }
                                                     
@@ -160,7 +171,7 @@ struct DetailView: View {
                                                         Text(" Ultimate")
                                                             .font(Font.custom("Charter-Bold", size: 17))
                                                             .bold()
-                                                        Text(" Blade Storm")
+                                                        Text(ultimate)
                                                             .font(Font.custom("Charter-italic", size: 17))
                                                     }
                                                     
@@ -182,7 +193,7 @@ struct DetailView: View {
                                             }
                                           
                                             
-                                            Text( "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.")
+                                            Text(biography)
                                                 .font(Font.custom("Charter-italic", size: 17))
                                                 .padding(.leading, 20)
                                             
@@ -207,5 +218,5 @@ struct DetailView: View {
 }
 
 #Preview {
-    DetailView()
+    DetailView(playerImage: "JettImage", frameColor: .cyan, crownImage: "JettCrown", agentRoleImage: "DuelistImage", playerName: "Jett", firstUtility: "Updraft", secondUtility: "Tailwind", thirdUtility: "Cloudburst", ultimate: "Blade Storm", biography: "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.")
 }

@@ -10,6 +10,7 @@ import Foundation
 struct TradingCard {
     
     let image: String
+    let frameColor: String
     let crownImage: String
     let agentRoleImage: String
     let playerName: String
