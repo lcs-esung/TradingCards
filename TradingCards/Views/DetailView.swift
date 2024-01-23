@@ -74,6 +74,8 @@ struct DetailView: View {
                             
                             
                             VStack {
+                                
+                                Text("kjAwbjqnfliAwbjqnfliuweqfjqbwlefiunwofuihqiu3oiAwbjqnfliuweqfjqbwlefiunwofuihqiu3oiAwbjqnfliuweqfjqbwlefiunwofuihqiu3oiAwbjqnfliuweqfjqbwlefiunwofuihqiu3oiAwbjqnfliuweqAwbjqnfliuweqfjqbwlefiunwofuihqiu3oifjqbwlefiunwofuihqiu3oiuweqfjqbwlefiunwofuihqiu3oiuqbfiouq3")
                                 Spacer()
                                     .padding()
                                     
