@@ -19,25 +19,30 @@ struct DetailView: View {
                         
                         Rectangle()
                             .foregroundColor(.black)
+                            .cornerRadius(4)
                         
                         Rectangle()
                             .foregroundColor(.white)
+                            .cornerRadius(4)
                             .padding()
                         
                         
                         Rectangle()
                             .foregroundColor(.cyan)
+                            .cornerRadius(4)
                             .padding()
                             .padding()
                         
                         Rectangle()
                             .foregroundColor(.white)
+                            .cornerRadius(4)
                             .padding()
                             .padding()
                             .padding()
                         
                         Image("JettImage")
                             .resizable()
+                            .cornerRadius(4)
                             .aspectRatio(contentMode: .fit)
                             .padding()
                             .padding()
@@ -101,6 +106,7 @@ struct DetailView: View {
                             VStack {
                                 Rectangle()
                                         .foregroundColor(.white)
+                                        .cornerRadius(4)
                                         .aspectRatio(contentMode: .fit)
                                     .padding()
                                 Spacer()
