@@ -25,7 +25,7 @@ struct ListPlayerView: View {
                     
             Image(iconImage)
                 .resizable()
-               
+                .scaledToFill()
                 .padding(.trailing, 3)
                 
                 )

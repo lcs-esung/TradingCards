@@ -15,7 +15,7 @@ struct ListView: View {
                 NavigationLink(destination: {jettCard}, 
                                label: {jettList})
                 
-                NavigationLink(destination:{phoenixCard},                               label:{phoenixCard})
+                NavigationLink(destination:{phoenixCard},                               label:{phoenixList})
                 
                 NavigationLink(destination:{yoruCard},                               label:{yoruList})
                 
