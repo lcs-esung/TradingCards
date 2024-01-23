@@ -13,15 +13,15 @@ struct ListView: View {
         NavigationStack{
             List{
                 NavigationLink(destination: {jettCard}, 
-                               label: {ListPlayerView()})
+                               label: {jettList})
                 
-                NavigationLink(destination:{pheonixCard},                               label:{ListPlayerView()})
+                NavigationLink(destination:{phoenixCard},                               label:{phoenixCard})
                 
-                NavigationLink(destination:{yoruCard},                               label:{ListPlayerView()})
+                NavigationLink(destination:{yoruCard},                               label:{yoruList})
                 
-                NavigationLink(destination:{reynaCard},                               label:{ListPlayerView()})
+                NavigationLink(destination:{reynaCard},                               label:{reynaList})
                 
-                NavigationLink(destination:{razeCard},                               label:{ListPlayerView()})
+                NavigationLink(destination:{razeCard},                               label:{razeList})
 
             }
           
