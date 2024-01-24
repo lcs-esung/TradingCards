@@ -25,18 +25,19 @@ struct DetailView: View {
         NavigationStack{
             ScrollView{
                 VStack {
+                    
+                    
                     Text(playerName)
                         .foregroundStyle(.gray)
-                        .font(Font.custom("zapfino", size: 40))
-                    
+                        .font(Font.custom("Hoeflertext-blackitalic", size: 60))
                         .overlay(
                     
-                    Text(playerName)
-                        .foregroundStyle(.white)
-                        .font(Font.custom("zapfino", size: 38))
-                        .padding(.trailing, 2)
+                            Text(playerName)
+                                .foregroundStyle(.white)
+                                .font(Font.custom("Hoeflertext-Blackitalic", size: 55))
+                                .padding(.trailing, 9)
                         )
-                        .padding(.bottom)
+                        .offset(y: 30)
                         
                         
                     ZStack {
