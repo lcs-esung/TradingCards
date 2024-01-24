@@ -220,7 +220,7 @@ struct DetailView: View {
                 }
                 .background(.black)
             }
-            .navigationTitle("Jett")
+            .navigationTitle(playerName)
            
         }
        

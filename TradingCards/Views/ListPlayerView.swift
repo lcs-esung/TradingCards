@@ -26,7 +26,7 @@ struct ListPlayerView: View {
             Image(iconImage)
                 .resizable()
                 .scaledToFill()
-                .padding(.trailing, 3)
+                .padding(.trailing, 7)
                 
                 )
                 .mask(Circle())
@@ -34,7 +34,7 @@ struct ListPlayerView: View {
             VStack(alignment: .leading){
                 Text(name)
                     .bold()
-                    .font(.headline)
+                    .font(Font.custom("Futura-bold", size: 18))
                 
                    
            
