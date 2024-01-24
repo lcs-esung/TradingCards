@@ -25,11 +25,21 @@ struct DetailView: View {
         NavigationStack{
             ScrollView{
                 VStack {
+                    Text(playerName)
+                        .foregroundStyle(.gray)
+                        .font(Font.custom("zapfino", size: 40))
                     
+                        .overlay(
                     
+                    Text(playerName)
+                        .foregroundStyle(.white)
+                        .font(Font.custom("zapfino", size: 38))
+                        .padding(.trailing, 2)
+                        )
+                        .padding(.bottom)
+                        
+                        
                     ZStack {
-                        
-                        
                         Rectangle()
                             .foregroundColor(.black)
                             .cornerRadius(4)
@@ -65,35 +75,23 @@ struct DetailView: View {
                         
                         VStack {
                             HStack {
-                                
                                 Spacer()
-                                
                                     .padding()
                                 
                                  
                                 Image(agentRoleImage)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                
-                            
                             }
-                            
                             Spacer()
                         }
-                        
-                        
                     }
                     .padding(.top)
                     
-                    
-                    
-                    
                         ZStack {
-                            
-                            
                             VStack {
-                                
                                 Text("kjAwbjqnfliAwbjqnfliuweqfjqbwlefiunwofuihqiu3oiAwbjqnfliuweqfjqbwlefiunwofuihqiu3oiAwbjqnfliuweqfjqbwlefiunwofuihqiu3oiAwbjqnfliuweqfjqbwlefiunwofuihqiu3oiAwbjqnfliuweqAwbjqnfliuweqfjqbwlefiunwofuihqiu3oifjqbwlefiunwofuihqiu3oiuweqfjqbwlefiunwofuihqiu3oiuqbfiouq3")
+                                
                                 Spacer()
                                     .padding()
                                     
@@ -222,7 +220,7 @@ struct DetailView: View {
                 }
                 .background(.black)
             }
-            .navigationTitle(playerName)
+           
            
         }
        
