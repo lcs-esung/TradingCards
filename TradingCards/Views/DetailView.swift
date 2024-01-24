@@ -25,6 +25,8 @@ struct DetailView: View {
         NavigationStack{
             ScrollView{
                 VStack {
+                    
+                    
                     ZStack {
                         
                         
