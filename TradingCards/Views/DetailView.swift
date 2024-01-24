@@ -153,7 +153,10 @@ struct DetailView: View {
                                                 
                                                 HStack(spacing: 12) {
                                                     
+                                                    
                                                     VStack(alignment: .leading) {
+                                                        
+                                                        
                                                         Text(" 1st skill")
                                                             .font(Font.custom("Charter-Bold", size: 17))
                                                             .bold()
