@@ -11,9 +11,7 @@ import SwiftUI
 
 struct ListPlayerView: View {
     
-    let iconImage: String
-    let name: String
-    let descriptions : String
+    let player: TradingCard
     
     var body: some View {
         
@@ -23,22 +21,22 @@ struct ListPlayerView: View {
                 .frame(width: 50)
                 .overlay(
                     
-            Image(iconImage)
-                .resizable()
-                .scaledToFill()
-                .padding(.trailing, 7)
-                
+                    Image(player.iconImage)
+                        .resizable()
+                        .scaledToFill()
+                        .padding(.trailing, 7)
+                    
                 )
                 .mask(Circle())
             
             VStack(alignment: .leading){
-                Text(name)
+                Text(player.name)
                     .bold()
-                    .font(Font.custom("Futura-bold", size: 18))
+                    .font(Font.custom("Futura-Bold", size: 18))
                 
-                   
-           
-                Text(descriptions)
+                
+                
+                Text(player.descriptions)
                     .font(Font.custom("Charter", size: 12))
             }
         }
@@ -47,5 +45,5 @@ struct ListPlayerView: View {
 }
 
 #Preview {
-    ListPlayerView(iconImage: "JettImage", name: "Jett", descriptions: "Representing her home country of South Korea.")
+    ListPlayerView(player: yoruCard)
 }

@@ -10,21 +10,19 @@ import SwiftUI
 struct ListView: View {
     var body: some View {
 
-        NavigationStack{
-            List{
-                NavigationLink(destination: {jettCard}, 
-                               label: {jettList})
+        NavigationStack {
+         
+            List(allPlayers) { currentPlayer in
                 
-                NavigationLink(destination:{phoenixCard},                               label: {phoenixList})
-                
-                NavigationLink(destination:{yoruCard},                               label: {yoruList})
-                
-                NavigationLink(destination:{reynaCard},                               label: {reynaList})
-                
-                NavigationLink(destination:{razeCard},                               label: {razeList})
+                NavigationLink {
+                    DetailView(player: currentPlayer)
+                } label: {
+                    ListPlayerView(player: currentPlayer)
+                }
 
+                
             }
-            .navigationTitle("Valorant Trading Cards")
+
         }
       
     }
